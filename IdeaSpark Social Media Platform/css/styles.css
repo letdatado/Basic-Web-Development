@@ -1,0 +1,171 @@
+/* ----------------------------------------
+   Design tokens (colours, fonts)
+---------------------------------------- */
+
+:root {
+    --bg-main: #0f172a;
+    --bg-card: #111827;
+    --text-main: #e5e7eb;
+    --text-muted: #94a3b8;
+    --accent: #22d3ee;
+    --border-subtle: #1f2937;
+}
+
+/* Global tweaks */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+/* ----------------------------------------
+   Layout and typography
+---------------------------------------- */
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Make main container breathe a bit */
+.container {
+    margin-bottom: 3rem;
+}
+/* ----------------------------------------
+   Navbar and footer
+---------------------------------------- */
+
+.navbar {
+    background-color: #020617;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.nav-link {
+    color: var(--text-muted);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--text-main);
+}
+/* ----------------------------------------
+   Cards and sections
+---------------------------------------- */
+
+.card {
+    background-color: var(--bg-card);
+    border-color: var(--border-subtle);
+}
+
+/* Making text inside card bodies readable */
+.card-body {
+    color: var(--text-main);
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.card-text {
+    color: var(--text-main);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+
+/* Bootstrap's default muted grey is too dark for our background */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Small text should still be readable */
+.small {
+    color: var(--text-muted);
+}
+
+/* Emphasise stat numbers */
+.fs-5 {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+/* ----------------------------------------
+   Forms & buttons
+---------------------------------------- */
+
+.form-label {
+    font-weight: 500;
+}
+
+.form-control,
+.form-select {
+    background-color: #020617;
+    border-color: var(--border-subtle);
+    color: var(--text-main);
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+}
+
+
+.btn-primary {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #020617;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #0ea5e9;
+    border-color: #0ea5e9;
+    color: #020617;
+}
+/* ----------------------------------------
+   Accessibility helpers */
+
+.visually-hidden-focusable {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+}
+
+.visually-hidden-focusable:focus {
+    left: 0;
+    top: 0;
+    padding: 0.5rem 1rem;
+    background: #000;
+    color: #fff;
+    z-index: 1000;
+}
+
+/* ----------------------------------------
+   Debugging helps */
+
+   
+.form-text {
+    color: var(--text-muted);
+}
