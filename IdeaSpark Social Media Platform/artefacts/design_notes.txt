@@ -1,0 +1,48 @@
+---------------
+Colour Palette
+---------------
+
+Primary background: #1A1A1A (dark grey)
+Secondary background: #222222
+Accent colour: #FFD24C (for buttons, highlights)
+Neutral text colour: #EAEAEA
+Reason: IdeaSpark uses a dark minimal theme similar to brainstorming boards. Accent represents “sparks of ideas”.
+
+
+---------------
+Font Choices
+---------------
+
+Main font: Inter / Roboto / Lato
+Reason: Clean, modern, readable for text-heavy idea descriptions.
+Heading font: Same family with bolder weight for consistency.
+
+
+---------------
+Layout Style
+---------------
+
+Card-based layout for ideas.
+Wide margins and whitespace for readability.
+Sections separated with clear headers.
+Bootstrap grid for responsive design.
+
+
+-------------------------
+Accessibility Intentions
+-------------------------
+
+High-contrast text/background.
+Alt text for carousel images and logo.
+Keyboard navigability for key features.
+Consistent heading hierarchy.
+Colour checked with contrast tool later.
+
+
+--------------------
+Branding / Logo Idea
+--------------------
+
+Name: IdeaSpark
+Logo concept: simple lightning/spark symbol or modern minimal bulb icon.
+Reason: Aligns with theme of generating and sharing creative ideas.
