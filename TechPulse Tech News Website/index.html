@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!--
+
+  File: index.html
+  Description: Techpulse News - Tech news site with HTML, CSS, and JavaScript.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TechPulse News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Font Awesome icons for nav and section headings -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Main stylesheet for layout and colours -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Main wrapper -->
+  <div class="wrap">
+
+    <!-- HEADER Site title and short tagline -->
+    <header>
+      <h1>TechPulse News</h1>
+      <p>Your daily dose of AI, data, and emerging tech.</p>
+    </header>
+
+    <!-- Navigation-->
+    <nav>
+      <!-- Mobile nav toggle-->
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul>
+        <li><a href="#latest"><i class="fa-solid fa-newspaper"></i> Latest News</a></li>
+        <li><a href="#gallery"><i class="fa-solid fa-image"></i> Image Gallery</a></li>
+        <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+      </ul>
+
+      <!-- Theme toggle -->
+      <button class="theme-toggle" aria-label="Toggle light/dark theme">
+        <i class="fa-solid fa-sun"></i>
+      </button>
+    </nav>
+
+    <!-- Main content area, grouping all core sections -->
+    <main>
+
+      <!-- Section for latest tech News (articles) -->
+      <section id="latest">
+        <!-- h2 used as the main heading for this group of articles -->
+        <h2><i class="fa-solid fa-bolt"></i> Latest Tech News</h2>
+
+        <!-- Article 1 -->
+        <article>
+          <!-- Header for this single article -->
+          <header>
+            <h3>
+              <a href="https://www.amazon.science/blog/novel-kaputt-dataset-sets-new-benchmark-for-large-scale-visual-defect-detection" target="_blank">
+                Generative AI Model Sets New Benchmark
+              </a>
+            </h3>
+            <p class="meta">
+              <small>Published: 02 Octobre 2025 | </small>
+              <span class="badge badge-ai">AI</span>
+            </p>
+          </header>
+
+          <!-- Main article body text -->
+          <p>
+            A new generative AI model has reportedly set a state-of-the-art benchmark
+            on multiple language and vision tasks, highlighting rapid advances in model
+            efficiency and capability.
+          </p>
+
+          <p>
+            Researchers emphasise responsible deployment, focusing on transparency,
+            fairness, and safety as these models become integrated into everyday tools.
+          </p>
+
+          <!-- Read full article link -->
+          <p>
+            <a href="https://www.amazon.science/blog/novel-kaputt-dataset-sets-new-benchmark-for-large-scale-visual-defect-detection" target="_blank">
+              Read full article &raquo;
+            </a>
+          </p>
+
+          <!-- Footer gives the source of the article -->
+          <footer>
+            <p>
+              Source:
+              <a href="https://www.amazon.science/blog/novel-kaputt-dataset-sets-new-benchmark-for-large-scale-visual-defect-detection" target="_blank">
+                Amazon Science – Novel “Kaputt” dataset sets new benchmark for large-scale visual defect detection
+              </a>
+            </p>
+          </footer>
+        </article>
+
+        <!-- 2nd article -->
+        <article>
+          <header>
+            <h3>
+              <a href="https://www.anecdotes.ai/learn/ai-regulations-in-2025-us-eu-uk-japan-china-and-more" target="_blank">
+                New Data Privacy Rules for AI Systems
+              </a>
+            </h3>
+            <p class="meta">
+              <small>Published: 29 October 2025 | </small>
+              <span class="badge badge-security">Data &amp; Security</span>
+            </p>
+          </header>
+
+          <p>
+            Regulators are introducing updated data protection rules for AI-driven systems.
+            These changes aim to give users more control over how their personal data is
+            collected, stored, and used in training machine learning models.
+          </p>
+
+          <p>
+            Organisations working with AI will need clearer documentation, stronger consent
+            mechanisms, and transparent model behaviours to remain compliant.
+          </p>
+
+          <p>
+            <a href="https://www.anecdotes.ai/learn/ai-regulations-in-2025-us-eu-uk-japan-china-and-more" target="_blank">
+              Read full article &raquo;
+            </a>
+          </p>
+
+          <footer>
+            <p>
+              Source:
+              <a href="https://www.anecdotes.ai/learn/ai-regulations-in-2025-us-eu-uk-japan-china-and-more" target="_blank">
+                Anecdotes – AI Regulations in 2025: US, EU, UK, Japan, China &amp; more
+              </a>
+            </p>
+          </footer>
+        </article>
+
+        <!-- 3rd article -->
+        <article>
+          <header>
+            <h3>
+              <a href="https://www.ptechpartners.com/2025/02/20/top-data-science-tools-and-technologies-to-master-in-2025/" target="_blank">
+                Top Emerging Tools for Data Scientists in 2025
+              </a>
+            </h3>
+            <p class="meta">
+              <small>Published: 01 November 2025 | </small>
+              <span class="badge badge-tools">Tools &amp; Libraries</span>
+            </p>
+          </header>
+
+          <p>
+            From lightweight model monitoring frameworks to no-code data pipelines,
+            a new wave of tools is making it easier for data scientists to deploy
+            and manage AI systems in production.
+          </p>
+
+          <p>
+            Many of these platforms focus on collaboration, experiment tracking,
+            and reproducibility, helping teams move from prototype to production faster.
+          </p>
+
+          <p>
+            <a href="https://www.ptechpartners.com/2025/02/20/top-data-science-tools-and-technologies-to-master-in-2025/" target="_blank">
+              Read full article &raquo;
+            </a>
+          </p>
+
+          <footer>
+            <p>
+              Source:
+              <a href="https://www.ptechpartners.com/2025/02/20/top-data-science-tools-and-technologies-to-master-in-2025/" target="_blank">
+                PTP – Top Data Science Tools and Technologies to Master in 2025
+              </a>
+            </p>
+          </footer>
+        </article>
+
+        <!-- 4th article -->
+        <article>
+          <header>
+            <h3>
+              <a href="https://news.mit.edu/2024/training-general-purpose-robots-faster-better-1028" target="_blank">
+                Fast-Training Robots Take Inspiration from Large Language Models
+              </a>
+            </h3>
+            <p class="meta">
+              <small>Published: 28 October 2024 | </small>
+              <span class="badge badge-ai">AI &amp; Robotics</span>
+            </p>
+          </header>
+
+          <p>
+            MIT researchers have developed a training technique that pools diverse data
+            to teach general-purpose robots new skills more quickly and efficiently.
+          </p>
+
+          <p>
+            By reusing knowledge across many tasks, robots can adapt to new situations
+            with less task-specific training, opening the door to more flexible automation.
+          </p>
+
+          <p>
+            <a href="https://news.mit.edu/2024/training-general-purpose-robots-faster-better-1028" target="_blank">
+              Read full article &raquo;
+            </a>
+          </p>
+
+          <footer>
+            <p>
+              Source:
+              <a href="https://news.mit.edu/2024/training-general-purpose-robots-faster-better-1028" target="_blank">
+                MIT News – A faster, better way to train general-purpose robots
+              </a>
+            </p>
+          </footer>
+        </article>
+
+        <!-- 5th article -->
+        <article>
+          <header>
+            <h3>
+              <a href="https://thehackernews.com/2025/03/google-rolls-out-ai-scam-detection-for.html" target="_blank">
+                Google Rolls Out AI Scam Detection Features
+              </a>
+            </h3>
+            <p class="meta">
+              <small>Published: 05 March 2025 | </small>
+              <span class="badge badge-security">Cybersecurity</span>
+            </p>
+          </header>
+
+          <p>
+            Google has announced new AI-powered scam detection that analyses message patterns
+            in real time and warns users about likely fraud attempts before they fall victim.
+          </p>
+
+          <p>
+            The feature targets SMS, MMS, and RCS scams, reflecting a broader push to use AI
+            defensively against increasingly sophisticated malicious actors.
+          </p>
+
+          <p>
+            <a href="https://thehackernews.com/2025/03/google-rolls-out-ai-scam-detection-for.html" target="_blank">
+              Read full article &raquo;
+            </a>
+          </p>
+
+          <footer>
+            <p>
+              Source:
+              <a href="https://thehackernews.com/2025/03/google-rolls-out-ai-scam-detection-for.html" target="_blank">
+                The Hacker News – Google Rolls Out AI Scam Detection for Android
+              </a>
+            </p>
+          </footer>
+        </article>
+
+        <!-- 6th article -->
+        <article>
+          <header>
+            <h3>
+              <a href="https://www.ptechpartners.com/2025/02/20/top-data-science-tools-and-technologies-to-master-in-2025/" target="_blank">
+                Data Science Tools to Master for the AI Era
+              </a>
+            </h3>
+            <p class="meta">
+              <small>Published: 20 February 2025 | </small>
+              <span class="badge badge-tools">Data Science Tools</span>
+            </p>
+          </header>
+
+          <p>
+            As AI and data science continue to converge, professionals are encouraged to build
+            skills in tools such as TensorFlow, Apache Spark, Jupyter, and modern cloud platforms.
+          </p>
+
+          <p>
+            Mastering the right combination of data engineering, visualization, and machine
+            learning tools is becoming essential for staying competitive in the data-driven economy.
+          </p>
+
+          <p>
+            <a href="https://www.ptechpartners.com/2025/02/20/top-data-science-tools-and-technologies-to-master-in-2025/" target="_blank">
+              Read full article &raquo;
+            </a>
+          </p>
+
+          <footer>
+            <p>
+              Source:
+              <a href="https://www.ptechpartners.com/2025/02/20/top-data-science-tools-and-technologies-to-master-in-2025/" target="_blank">
+                PTP – Top Data Science Tools and Technologies to Master in 2025
+              </a>
+            </p>
+          </footer>
+        </article>
+      </section>
+
+      <!-- Image Gallery -->
+      <section id="gallery">
+        <h2><i class="fa-solid fa-image"></i> AI in Pictures – Image Gallery</h2>
+
+        <div class="gallery">
+          <figure>
+            <img src="images/gallery/img1.png" alt="AI concept illustration">
+            <figcaption>AI Concept Art</figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/gallery/img2.png" alt="Data visualisation screen">
+            <figcaption>Data Visualisation</figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/gallery/img3.png" alt="Robot arm in a lab">
+            <figcaption>Robotics Lab</figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/gallery/img4.png" alt="Circuit board and chips">
+            <figcaption>Tech Circuit Design</figcaption>
+          </figure>
+        </div>
+
+        <!-- Short note about where the images originates from-->
+        <p class="image-source">
+          <small>Image Sources: Unsplash.com / Pexels.com (All copyright-free images).</small>
+        </p>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <h2><i class="fa-solid fa-circle-info"></i> About This Website</h2>
+        <!-- Simple explanation of the site -->
+        <p>
+          The aim is to demonstrate HTML5 structure, CSS styling,
+          a custom image gallery, basic JavaScript, and later integration with a MySQL
+          database hosted on Lochnagar.
+        </p>
+        <p>
+          All news articles reference their original sources, which are credited within
+          each article. The design of this page is inspired by a dark, card-based layout
+          similar to a modern developer portfolio profile.
+        </p>
+      </section>
+
+    </main>
+
+    <!-- FOOTER: repeated module + author info at the bottom -->
+    <footer>
+      <p>&copy; <span id="year"></span> Techpulse News | Created by Letdatado</p>
+      <p>Web Development Practical</p>
+    </footer>
+
+  </div>
+
+  <!-- BACK TO TOP BUTTON-->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!--
+    JavaScript that:
+    1. Inserts the current year into the footer.
+    2. Adds smooth scrolling for nav links.
+    3. Shows a back-to-top button after scrolling.
+    4. Toggles between dark and light theme.
+    5. Collapsible nav on mobile via the hamburger button.
+  -->
+  <script>
+    // Dynamic year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('nav a[href^="#"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Back to top button show/hide + smooth scroll to top
+    const backToTopBtn = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Theme toggle (light/dark) using a body class + CSS variables
+    const themeToggleBtn = document.querySelector('.theme-toggle');
+    const body = document.body;
+
+    themeToggleBtn.addEventListener('click', function() {
+      body.classList.toggle('light-theme');
+      const icon = themeToggleBtn.querySelector('i');
+
+      // Swap icon based on theme
+      if (body.classList.contains('light-theme')) {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      } else {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      }
+    });
+
+    // Collapsible mobile nav (hamburger menu)
+    const nav = document.querySelector('nav');
+    const navToggle = document.querySelector('.nav-toggle');
+
+    navToggle.addEventListener('click', function() {
+      nav.classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>
