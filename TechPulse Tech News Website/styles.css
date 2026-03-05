@@ -1,0 +1,416 @@
+/* Colour variables so theme can be tweaked from one place */
+:root{
+  --bg:#0f172a;
+  --card:#111827;
+  --muted:#94a3b8;
+  --text:#e5e7eb;
+  --accent:#22d3ee;
+  --outline:#22d3ee;
+  --chip:#1f2937;
+  --border:#334155;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+/* Light theme overrides using the same variables */
+body.light-theme{
+  --bg:#e5e7eb;
+  --card:#ffffff;
+  --muted:#4b5563;
+  --text: #4b5563;
+  --accent:#0ea5e9;
+  --chip:#f3f4f6;
+  --border:#cbd5e1;
+}
+
+body{
+  margin:0;
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans";
+  /* Dark background*/
+  background:radial-gradient(1200px 800px at 10% -10%,#172554 0%,#0b1220 40%,var(--bg) 100%);
+  color:var(--text);
+  line-height:1.6;
+}
+
+/* ------------------------------
+   GLOBAL PAGE STYLES
+--------------------------------*/
+a{
+  color:var(--accent);
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+.wrap{
+  max-width:1100px;
+  margin:40px auto;
+  padding:0 16px;
+}
+
+/* ------------------------------
+   HEADER
+--------------------------------*/
+header {
+    /* Overlay colour + background image */
+    background-image: linear-gradient(
+        rgba(10, 25, 47, 0.85),
+        rgba(10, 25, 47, 0.85)
+    ),
+    url("images/header-bg.png"); /* HEADER PICTURE */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    outline: 2px dashed transparent;
+    outline-offset: 6px;
+    transition: outline-color 0.2s ease, transform 0.2s ease;
+    margin-bottom: 16px;
+}
+
+/* Hover state */
+header:hover {
+    outline-color: var(--outline);
+    transform: translateY(-2px);
+}
+
+/* Title and Taglien aesthetics*/
+header h1 {
+    margin: 0 0 5px;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* ------------------------------
+   NAVIGATION BAR
+--------------------------------*/
+nav {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 8px 16px;
+    margin: 10px 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+}
+
+nav ul li a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 6px 10px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Navigation link hover colour fade */
+nav ul li a:hover {
+    color: #0b1220;
+    background-color: var(--accent);
+    text-decoration: none;
+}
+
+/* Icon buttons in nav (hamburger + toggle) */
+.nav-toggle,
+.theme-toggle{
+  background:transparent;
+  border:none;
+  color:var(--text);
+  font-size:1.1rem;
+  cursor:pointer;
+  padding:6px;
+  border-radius:999px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  transition:background-color .2s ease;
+}
+
+.nav-toggle:hover,
+.theme-toggle:hover{
+  background-color:var(--chip);
+}
+
+/* ------------------------------
+   MAIN CONTENT AREA
+--------------------------------*/
+main {
+    padding: 0;
+}
+
+/* General spacing */
+section {
+    margin-bottom: 24px;
+}
+
+/* ------------------------------
+   HEADINGS AND TEXT
+--------------------------------*/
+
+h2 {
+    margin-top: 0;
+    color: var(--text);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 5px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+/* Article titles */
+h3 {
+    margin-top: 0;
+    color: var(--text);
+}
+
+/* Paragraph colour */
+p {
+    color: var(--text);
+}
+
+/* Line under article titles */
+.meta {
+    margin: 0 0 8px;
+    font-size: 0.85rem;
+}
+
+article header p small {
+    color: var(--muted);
+    font-weight: 600;
+}
+
+/* ------------------------------
+   ARTICLES
+--------------------------------*/
+article {
+    background: var(--card);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    outline: 2px solid transparent;
+    outline-offset: 6px;
+
+    /* Aesthetic hover */
+    transition: box-shadow 0.2s ease, transform 0.2s ease, outline-color 0.2s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); 
+}
+
+article:hover {
+    box-shadow: 0 10px 25px rgba(15,23,42,0.7);
+    transform: translateY(-3px);
+    outline-color: var(--outline);
+}
+
+/* ------------------------------
+  CATEGORY BADGES 
+--------------------------------*/
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px solid var(--border);
+}
+
+/* Variable colours per category */
+.badge-ai {
+    background-color: #0f766e;
+}
+
+.badge-security {
+    background-color: #4caf50;
+}
+
+.badge-tools {
+    background-color: #1d4ed8;
+}
+
+/* ------------------------------
+   IMAGE GALLERY
+--------------------------------*/
+
+#gallery {
+    background-color: var(--card);
+    padding: 20px;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    outline: 2px solid transparent;
+    outline-offset: 6px;
+    transition: outline-color 0.2s ease;
+}
+
+#gallery:hover{
+    outline-color: var(--outline);
+}
+
+/* Responsive grid for smaller screens */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery figure {
+    background: var(--chip);
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;  
+    border-radius: 8px;
+}
+
+.gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+/* Aesthetics for gallery cards */
+.gallery figure:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 18px rgba(15,23,42,0.7);
+}
+
+.image-source {
+    margin-top: 10px;
+    color: var(--muted);
+}
+
+/* ------------------------------
+   ABOUT SECTION
+--------------------------------*/
+#about{
+    background-color: var(--card);
+    padding: 20px;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    outline: 2px solid transparent;
+    outline-offset: 6px;
+    transition: outline-color 0.2s ease;
+}
+
+#about:hover{
+    outline-color: var(--outline);
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+    background-color: transparent;
+    color: var(--muted);
+    text-align: center;
+    padding: 20px 0 10px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* ------------------------------
+   BACK TO TOP BUTTON
+--------------------------------*/
+.back-to-top{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:40px;
+  height:40px;
+  border-radius:999px;
+  border:none;
+  background-color:var(--accent);
+  color:#0b1220;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  box-shadow:0 10px 25px rgba(15,23,42,0.7);
+  opacity:0;
+  pointer-events:none;
+  transform:translateY(10px);
+  transition:opacity .2s ease, transform .2s ease;
+  z-index:50;
+}
+
+.back-to-top.show{
+  opacity:1;
+  pointer-events:auto;
+  transform:translateY(0);
+}
+
+/* ------------------------------
+   RESPONSIVE TWEAKS
+--------------------------------*/
+
+/* Mobile */
+@media (max-width: 768px){
+  nav{
+    flex-wrap:wrap;
+    justify-content:space-between;
+  }
+
+  nav ul{
+    width:100%;
+    margin-top:8px;
+    display:none;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  nav.nav-open ul{
+    display:flex;
+  }
+
+  .wrap{
+    margin:20px auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 769px){
+  .nav-toggle{
+    display:none;
+  }
+
+  nav ul{
+    display:flex;
+  }
+}
